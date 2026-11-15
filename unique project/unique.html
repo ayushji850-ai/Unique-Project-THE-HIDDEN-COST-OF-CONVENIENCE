@@ -1,351 +1,595 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore the hidden environmental, social and financial costs of modern convenience.">
+
     <title>The Hidden Cost of Convenience</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <header>
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar container">
 
-        <h1 align="center">THE HIDDEN COST OF CONVENIENCE</h1>
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-leaf"></i>
+                <span>Hidden<span class="logo-highlight">Cost.</span></span>
+            </a>
 
-        <p align="center">
-            <b>Are We Paying More Than We Think?</b>
-        </p>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-        <hr>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#progress">Progress</a></li>
+            </ul>
 
-        <nav align="center">
-            <a href="#home">Home</a> |
-            <a href="#introduction">Introduction</a> |
-            <a href="#examples">Daily Life Examples</a> |
-            <a href="#impact">Hidden Impact</a> |
-            <a href="#solutions">Solutions</a> |
-            <a href="#progress">Project Progress</a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
         </nav>
-
-        <hr>
-
     </header>
 
     <main>
 
-        <section id="home">
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
 
-            <h2>Welcome to Our Project</h2>
+            <div class="hero-overlay"></div>
 
-            <p>
-                Modern life has become easier than ever.
-                We can order food, shop online, travel easily
-                and get almost everything with a few clicks.
-            </p>
+            <div class="hero-content container">
 
-            <p>
-                But have we ever stopped to think about the
-                hidden costs behind these conveniences?
-            </p>
+                <span class="hero-tag">
+                    <i class="fa-solid fa-earth-asia"></i>
+                    AWARENESS • RESPONSIBILITY • SUSTAINABILITY
+                </span>
 
-            <p>
-                <b>Project Status:</b> Currently In Progress
-            </p>
+                <h1>
+                    THE HIDDEN COST
+                    <br>
+                    OF <span>CONVENIENCE</span>
+                </h1>
 
-            <img
-                src="https://placehold.co/600x250?text=The+Hidden+Cost+of+Convenience"
-                alt="The Hidden Cost of Convenience Project"
-                width="500"
-            >
-
-        </section>
-
-        <hr>
-
-        <section id="introduction">
-
-            <h2>1. Introduction</h2>
-
-            <article>
-
-                <p>
-                    Convenience means saving time, effort and energy
-                    by making everyday tasks easier.
+                <p class="hero-subtitle">
+                    Are We Paying More Than We Think?
                 </p>
 
-                <p>
-                    Although convenience improves our lifestyle,
-                    it can also create problems such as excessive
-                    packaging, waste generation, unnecessary spending
-                    and dependence on instant services.
+                <p class="hero-description">
+                    Modern convenience makes life easier, but every easy choice
+                    may have a hidden cost for our environment, society and future.
                 </p>
 
+                <div class="hero-buttons">
+                    <a href="#introduction" class="btn btn-primary">
+                        Explore the Project <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#solutions" class="btn btn-outline">
+                        Discover Solutions
+                    </a>
+                </div>
+
+                <div class="project-status">
+                    <span class="status-dot"></span>
+                    Project Status: In Progress
+                </div>
+
+            </div>
+
+            <a href="#introduction" class="scroll-down">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="section container reveal" id="introduction">
+
+            <div class="section-heading">
+                <span class="section-label">01 — INTRODUCTION</span>
+                <h2>The Price Behind <span>Convenience</span></h2>
                 <p>
-                    This project aims to explore the hidden effects
-                    of convenience on individuals, society
-                    and the environment.
+                    Convenience saves our time, but are we ignoring its
+                    long-term consequences?
+                </p>
+            </div>
+
+            <div class="intro-grid">
+
+                <div class="intro-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=900"
+                        alt="Green environment and sustainability">
+                    <div class="image-caption">
+                        <i class="fa-solid fa-earth-americas"></i>
+                        Small choices create a bigger impact.
+                    </div>
+                </div>
+
+                <div class="intro-content">
+
+                    <h3>What Does Convenience Really Mean?</h3>
+
+                    <p>
+                        Convenience means saving time, effort and energy by
+                        making everyday tasks easier. From online shopping
+                        to instant food delivery, modern technology has
+                        transformed our lifestyle.
+                    </p>
+
+                    <p>
+                        However, excessive convenience can also lead to
+                        packaging waste, unnecessary spending, pollution
+                        and dependence on instant services.
+                    </p>
+
+                    <p>
+                        This project explores the hidden effects of
+                        convenience on individuals, society and the
+                        environment.
+                    </p>
+
+                    <div class="intro-highlight">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <div>
+                            <strong>Our Key Question</strong>
+                            <p>Is convenience always worth its hidden cost?</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DAILY LIFE EXAMPLES -->
+        <section class="section examples-section" id="examples">
+
+            <div class="container reveal">
+
+                <div class="section-heading">
+                    <span class="section-label">02 — DAILY LIFE</span>
+                    <h2>Convenience in <span>Our Lives</span></h2>
+                    <p>
+                        Everyday activities that seem simple but may
+                        have hidden consequences.
+                    </p>
+                </div>
+
+                <div class="cards-grid">
+
+                    <article class="example-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <span class="card-number">01</span>
+                        <h3>Online Shopping</h3>
+                        <p>
+                            Online shopping saves time, but frequent
+                            deliveries may increase packaging waste
+                            and transportation needs.
+                        </p>
+                        <span class="card-tag">Packaging Waste</span>
+                    </article>
+
+                    <article class="example-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-motorcycle"></i>
+                        </div>
+                        <span class="card-number">02</span>
+                        <h3>Food Delivery</h3>
+                        <p>
+                            Food delivery offers easy access to meals,
+                            but disposable containers and delivery
+                            transportation can create extra waste.
+                        </p>
+                        <span class="card-tag">Extra Waste</span>
+                    </article>
+
+                    <article class="example-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-bottle-water"></i>
+                        </div>
+                        <span class="card-number">03</span>
+                        <h3>Single-Use Products</h3>
+                        <p>
+                            Disposable cups, plates and bags are
+                            convenient, but often become waste
+                            after a short period of use.
+                        </p>
+                        <span class="card-tag">Plastic Pollution</span>
+                    </article>
+
+                    <article class="example-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <span class="card-number">04</span>
+                        <h3>Digital Services</h3>
+                        <p>
+                            Digital services save time, but excessive
+                            dependence may reduce self-reliance
+                            in some everyday activities.
+                        </p>
+                        <span class="card-tag">Digital Dependence</span>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- IMPACT SECTION -->
+        <section class="section container reveal" id="impact">
+
+            <div class="section-heading">
+                <span class="section-label">03 — HIDDEN IMPACT</span>
+                <h2>What Is the <span>Real Cost?</span></h2>
+                <p>
+                    Every convenience has possible environmental,
+                    financial or social consequences.
+                </p>
+            </div>
+
+            <div class="impact-table-wrapper">
+
+                <table class="impact-table">
+
+                    <thead>
+                        <tr>
+                            <th>Convenience</th>
+                            <th>Possible Hidden Cost</th>
+                            <th>Impact Area</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td><i class="fa-solid fa-cart-shopping"></i> Online Shopping</td>
+                            <td>Packaging waste and transport emissions</td>
+                            <td><span class="impact-tag environment">Environment</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-solid fa-utensils"></i> Food Delivery</td>
+                            <td>Disposable packaging and extra waste</td>
+                            <td><span class="impact-tag environment">Environment</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-solid fa-bag-shopping"></i> Single-Use Plastic</td>
+                            <td>Long-term environmental pollution</td>
+                            <td><span class="impact-tag environment">Environment</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-solid fa-credit-card"></i> Impulse Buying</td>
+                            <td>Unnecessary spending and consumption</td>
+                            <td><span class="impact-tag financial">Financial</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><i class="fa-solid fa-laptop"></i> Technology Dependence</td>
+                            <td>Reduced self-reliance in some daily tasks</td>
+                            <td><span class="impact-tag social">Social</span></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="impact-note">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>
+                    These are possible impacts. Their actual scale depends
+                    on consumption habits, product choices and local conditions.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- WHY CARE -->
+        <section class="why-section">
+
+            <div class="container reveal">
+
+                <div class="section-heading light-heading">
+                    <span class="section-label">04 — WHY IT MATTERS</span>
+                    <h2>Why Should <span>We Care?</span></h2>
+                    <p>Awareness is the first step towards responsible living.</p>
+                </div>
+
+                <div class="why-grid">
+
+                    <div class="why-item">
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>Better Awareness</h3>
+                        <p>Understand our daily consumption habits.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <i class="fa-solid fa-recycle"></i>
+                        <h3>Less Waste</h3>
+                        <p>Reduce unnecessary waste generation.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <i class="fa-solid fa-wallet"></i>
+                        <h3>Smart Spending</h3>
+                        <p>Make responsible purchasing decisions.</p>
+                    </div>
+
+                    <div class="why-item">
+                        <i class="fa-solid fa-seedling"></i>
+                        <h3>Green Future</h3>
+                        <p>Protect natural resources for future generations.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SOLUTIONS -->
+        <section class="section container reveal" id="solutions">
+
+            <div class="section-heading">
+                <span class="section-label">05 — SOLUTIONS</span>
+                <h2>Small Changes, <span>Big Difference</span></h2>
+                <p>
+                    Practical habits can help us balance convenience
+                    with sustainability.
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+
+                <div class="solution-item">
+                    <span>01</span>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h3>Use Reusable Bags</h3>
+                    <p>Carry reusable bags and water bottles.</p>
+                </div>
+
+                <div class="solution-item">
+                    <span>02</span>
+                    <i class="fa-solid fa-ban"></i>
+                    <h3>Avoid Unnecessary Buying</h3>
+                    <p>Think before making online purchases.</p>
+                </div>
+
+                <div class="solution-item">
+                    <span>03</span>
+                    <i class="fa-solid fa-box-open"></i>
+                    <h3>Reduce Packaging</h3>
+                    <p>Choose products with less packaging.</p>
+                </div>
+
+                <div class="solution-item">
+                    <span>04</span>
+                    <i class="fa-solid fa-recycle"></i>
+                    <h3>Reuse and Recycle</h3>
+                    <p>Reuse materials and recycle appropriately.</p>
+                </div>
+
+                <div class="solution-item">
+                    <span>05</span>
+                    <i class="fa-solid fa-list-check"></i>
+                    <h3>Plan Purchases</h3>
+                    <p>Plan shopping instead of buying impulsively.</p>
+                </div>
+
+                <div class="solution-item">
+                    <span>06</span>
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>Choose Sustainable Options</h3>
+                    <p>Prefer environmentally responsible alternatives.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- OBJECTIVES -->
+        <section class="objectives-section">
+
+            <div class="container objectives-grid reveal">
+
+                <div>
+                    <span class="section-label">06 — PROJECT OBJECTIVES</span>
+                    <h2>What We Aim <span>To Achieve</span></h2>
+                    <p>
+                        Our project focuses on understanding the
+                        consequences of convenience and encouraging
+                        responsible consumer behaviour.
+                    </p>
+                </div>
+
+                <div class="objectives-list">
+
+                    <div><i class="fa-solid fa-check-circle"></i> Identify hidden costs of modern convenience.</div>
+                    <div><i class="fa-solid fa-check-circle"></i> Study real-life examples.</div>
+                    <div><i class="fa-solid fa-check-circle"></i> Understand social and environmental effects.</div>
+                    <div><i class="fa-solid fa-check-circle"></i> Suggest affordable and practical solutions.</div>
+                    <div><i class="fa-solid fa-check-circle"></i> Encourage responsible consumer behaviour.</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECT PROGRESS -->
+        <section class="section container reveal" id="progress">
+
+            <div class="section-heading">
+                <span class="section-label">07 — DEVELOPMENT</span>
+                <h2>Project <span>Progress</span></h2>
+                <p>
+                    Our development roadmap from initial research
+                    to the final project.
+                </p>
+            </div>
+
+            <div class="progress-container">
+
+                <div class="progress-top">
+                    <div>
+                        <h3>Development Roadmap</h3>
+                        <p>Project Version 1.0 — HTML, CSS and JavaScript</p>
+                    </div>
+
+                    <span class="progress-label">In Progress</span>
+                </div>
+
+                <div class="progress-track">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+                <div class="progress-percent">
+                    <span>Overall Progress</span>
+                    <strong id="progressPercent">0%</strong>
+                </div>
+
+                <div class="roadmap">
+
+                    <div class="roadmap-item completed">
+                        <i class="fa-solid fa-check"></i>
+                        <div>
+                            <h4>HTML Structure</h4>
+                            <p>Basic website structure and sections</p>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-item completed">
+                        <i class="fa-solid fa-check"></i>
+                        <div>
+                            <h4>Research and Content</h4>
+                            <p>Project information and content preparation</p>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-item current">
+                        <i class="fa-solid fa-spinner"></i>
+                        <div>
+                            <h4>CSS Styling and Layout</h4>
+                            <p>Professional design and website styling</p>
+                            <span>In Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <h4>JavaScript and Responsive Design</h4>
+                            <p>Interactive features and mobile optimization</p>
+                            <span>Planned</span>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-item">
+                        <i class="fa-regular fa-clock"></i>
+                        <div>
+                            <h4>Final Review</h4>
+                            <p>Testing, corrections and final submission</p>
+                            <span>Pending</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONCLUSION -->
+        <section class="conclusion-section reveal">
+
+            <div class="container conclusion-content">
+
+                <i class="fa-solid fa-earth-americas conclusion-icon"></i>
+
+                <span class="section-label">08 — CONCLUSION</span>
+
+                <h2>Convenience Is Easy.<br><span>Responsibility Is a Choice.</span></h2>
+
+                <p>
+                    Convenience is not necessarily bad. The real challenge
+                    is understanding its hidden costs and making thoughtful
+                    choices. By changing small habits, we can enjoy modern
+                    life while reducing unnecessary waste, spending and
+                    environmental impact.
                 </p>
 
-            </article>
+                <h3>Think Before You Choose. Convenience Has a Cost.</h3>
+
+                <a href="#home" class="btn btn-primary">
+                    Back to Top <i class="fa-solid fa-arrow-up"></i>
+                </a>
+
+            </div>
 
         </section>
-
-        <hr>
-
-        <section id="examples">
-
-            <h2>2. Convenience in Our Daily Lives</h2>
-
-            <h3>Online Shopping</h3>
-
-            <p>
-                Online shopping saves time, but frequent deliveries
-                may increase packaging waste and transportation needs.
-            </p>
-
-            <h3>Food Delivery Apps</h3>
-
-            <p>
-                Food delivery makes meals easily accessible.
-                However, it can also involve disposable containers,
-                plastic packaging and delivery-related emissions.
-            </p>
-
-            <h3>Single-Use Products</h3>
-
-            <p>
-                Disposable cups, plates, bags and other products
-                are convenient, but they can create large amounts
-                of waste after a short period of use.
-            </p>
-
-            <h3>Instant Digital Services</h3>
-
-            <p>
-                Digital services save time and effort.
-                However, excessive dependence on them may reduce
-                some everyday physical activities.
-            </p>
-
-        </section>
-
-        <hr>
-
-        <section id="impact">
-
-            <h2>3. The Hidden Impact</h2>
-
-            <table border="1" cellpadding="8" cellspacing="0">
-
-                <caption>
-                    <b>Convenience and Its Possible Costs</b>
-                </caption>
-
-                <thead>
-
-                    <tr>
-                        <th>Convenience</th>
-                        <th>Possible Hidden Cost</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>Online Shopping</td>
-                        <td>Packaging waste and transport emissions</td>
-                    </tr>
-
-                    <tr>
-                        <td>Food Delivery</td>
-                        <td>Disposable packaging and extra waste</td>
-                    </tr>
-
-                    <tr>
-                        <td>Single-Use Plastic</td>
-                        <td>Environmental pollution</td>
-                    </tr>
-
-                    <tr>
-                        <td>Impulse Buying</td>
-                        <td>Unnecessary spending and consumption</td>
-                    </tr>
-
-                    <tr>
-                        <td>Overdependence on Technology</td>
-                        <td>Reduced self-reliance in some daily tasks</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </section>
-
-        <hr>
-
-        <section>
-
-            <h2>4. Why Should We Care?</h2>
-
-            <ul>
-
-                <li>To understand our daily consumption habits.</li>
-
-                <li>To reduce unnecessary waste.</li>
-
-                <li>To make more responsible purchasing decisions.</li>
-
-                <li>To protect natural resources.</li>
-
-                <li>To balance convenience with sustainability.</li>
-
-            </ul>
-
-        </section>
-
-        <hr>
-
-        <section id="solutions">
-
-            <h2>5. Possible Solutions</h2>
-
-            <ol>
-
-                <li>Carry reusable bags and water bottles.</li>
-
-                <li>Avoid unnecessary online purchases.</li>
-
-                <li>Choose products with less packaging when possible.</li>
-
-                <li>Reuse and recycle materials appropriately.</li>
-
-                <li>Plan purchases instead of buying impulsively.</li>
-
-                <li>Choose sustainable alternatives whenever practical.</li>
-
-            </ol>
-
-        </section>
-
-        <hr>
-
-        <section>
-
-            <h2>6. Our Project Objectives</h2>
-
-            <ul>
-
-                <li>Identify hidden costs of modern convenience.</li>
-
-                <li>Study examples from everyday life.</li>
-
-                <li>Understand social and environmental effects.</li>
-
-                <li>Suggest practical and affordable solutions.</li>
-
-                <li>Encourage responsible consumer behaviour.</li>
-
-            </ul>
-
-        </section>
-
-        <hr>
-
-        <section id="progress">
-
-            <h2>7. Project Development Progress</h2>
-
-            <p>
-                This project is currently in the initial development
-                phase. The basic HTML structure and content are
-                being prepared.
-            </p>
-
-            <h3>Development Roadmap</h3>
-
-            <table border="1" cellpadding="8" cellspacing="0">
-
-                <tr>
-                    <th>Task</th>
-                    <th>Status</th>
-                </tr>
-
-                <tr>
-                    <td>HTML Structure</td>
-                    <td>In Progress</td>
-                </tr>
-
-                <tr>
-                    <td>Research and Content</td>
-                    <td>In Progress</td>
-                </tr>
-
-                <tr>
-                    <td>CSS Styling and Layout</td>
-                    <td>Planned</td>
-                </tr>
-
-                <tr>
-                    <td>Responsive Design</td>
-                    <td>Planned</td>
-                </tr>
-
-                <tr>
-                    <td>Final Review</td>
-                    <td>Pending</td>
-                </tr>
-
-            </table>
-
-            <p>
-                <b>Current Version:</b> 1.0 - HTML Prototype
-            </p>
-
-        </section>
-
-        <hr>
-
-        <section>
-
-            <h2>8. Conclusion</h2>
-
-            <p>
-                Convenience is not necessarily bad.
-                The real challenge is understanding its hidden costs
-                and making thoughtful choices.
-            </p>
-
-            <p>
-                By changing small habits, we can enjoy the benefits
-                of modern life while reducing unnecessary waste,
-                spending and environmental impact.
-            </p>
-
-            <p>
-                <b>Think Before You Choose. Convenience Has a Cost.</b>
-            </p>
-
-        </section>
-
-        <hr>
 
     </main>
 
-    <footer>
+    <!-- FOOTER -->
+    <footer class="footer">
 
-        <h3 align="center">Thank You for Visiting Our Project</h3>
+        <div class="container footer-content">
 
-        <p align="center">
+            <a href="#home" class="logo footer-logo">
+                <i class="fa-solid fa-leaf"></i>
+                <span>Hidden<span class="logo-highlight">Cost.</span></span>
+            </a>
+
+            <p>
+                Creating awareness for a better and more sustainable future.
+            </p>
+
+            <div class="footer-line"></div>
+
             <small>
-                The Hidden Cost of Convenience | Student Project | 2026
+                © 2026 The Hidden Cost of Convenience | Student Project
             </small>
-        </p>
+
+        </div>
 
     </footer>
 
-</body>
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
+    <script src="script.js"></script>
+
+</body>
 </html>
